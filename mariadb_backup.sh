@@ -5,8 +5,8 @@
 backup_root="/var/backups/moodle/mariadb"
 full_dir="$backup_root/full"
 inc_dir="$backup_root/inc"
-user="Backup_Username"  # Database user
-password="Backup_User_Password"  # Database password
+user="Backup_Username"
+password="Backup_User_Password"
 
 # System resources to use
 cores=$(nproc)

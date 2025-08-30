@@ -1,0 +1,116 @@
+/* Apply RTL only when the page language is Arabic */
+html[lang="ar"] {
+  direction: rtl;
+}
+
+/* General H5P content alignment */
+html[lang="ar"] .h5p-content {
+  direction: rtl;
+  text-align: right;
+}
+
+
+/* Course Presentation navigation arrows */
+html[lang="ar"] .h5p-course-presentation .h5p-footer .h5p-footer-next-slide::after {
+  content: "\f0d9"; /* fa-angle-left */
+}
+html[lang="ar"] .h5p-course-presentation .h5p-footer .h5p-footer-previous-slide::before {
+  content: "\f0da"; /* fa-angle-right */
+}
+
+/* Optional: Flip drag-and-drop layout */
+html[lang="ar"] .h5p-dragquestion .h5p-draggable {
+  float: right;
+}
+html[lang="ar"] .h5p-course-presentation .h5p-element{
+ direction: rtl;
+}
+html[lang="ar"] .h5p-advanced-text li {
+  direction: rtl;
+  text-align: right;
+  list-style-position: inside;
+}
+
+html[lang="ar"] .h5p-advanced-text li > p {
+  display: inline; /* make <p> act like inline */
+}
+
+html[lang="ar"]  .ck.ck-editor__editable_inline[dir=ltr] {
+    text-align: right;
+}
+html[lang="ar"]  .ck-content  {
+  direction: rtl;
+}
+
+/* Multichoice Question */
+
+html[lang="ar"] .h5p-multichoice .h5p-answer .h5p-alternative-container::before {
+    left: auto !important;
+    right: 2.5em !important;
+    text-align: right;
+}
+/* Flip the layout in RTL */
+html[lang="ar"] .h5p-multichoice .h5p-alternative-container {
+    text-align: right !important;
+    padding: 0.25em 3.1em 0.25em 0.75em !important; /* flip right/left padding */
+    text-indent: 0 !important; /* remove the LTR hack */
+}
+
+html[lang="ar"] .h5p-no-frame > .h5p-question > *,
+html[lang="ar"] .h5p-transparent > div > .h5p-question > * {
+  margin-right: 1em !important;
+  margin-left: 1em !important;
+}
+
+/* Multimedia choice */
+html[lang="ar"] .h5p-multi-media-choice-list-item {
+  left: auto !important;
+  right: 0 !important;
+  direction: rtl;
+}
+
+/* Check answer button */
+html[lang="ar"] .h5p-joubelui-button:before {
+  padding-right: 0 !important;
+  padding-left: 0.5em ;
+}
+
+/* Drag and drop word */
+/* Flip the wide screen drag container */
+html[lang="ar"] .h5p-drag-text .h5p-drag-wide-screen {
+  float: left !important;
+}
+
+/* Adjust drop zone padding and alignment */
+html[lang="ar"] .h5p-drag-text [aria-dropeffect] {
+  padding: 0.1em 0 0.1em 1.65em !important; /* flip left/right padding */
+  direction: rtl !important;
+  text-align: right !important;
+}
+/* Feedback */
+html[lang="ar"] .h5p-drag-correct-feedback:before,
+html[lang="ar"]  .h5p-drag-wrong-feedback:before {
+  right: auto !important;
+  left: 0.5em !important;
+}
+
+/* right space removal */
+html[lang="ar"] .h5p-drag-droppable-words {
+  margin-right: auto !important;
+  margin-left: 76px !important; /* You can use a dynamic or same value here */
+}
+/* Drag and drop */
+html[lang="ar"] .h5p-dragquestion .h5p-draggable {
+  text-align: right;
+}
+html[lang="ar"] .h5p-dragquestion .h5p-draggable.h5p-correct:after,
+html[lang="ar"] .h5p-dragquestion .h5p-draggable.h5p-wrong:after {
+  right: auto;
+  left: 0.1em;
+}
+
+html[lang="ar"] .h5p-dragquestion .h5p-question-plus-one,
+html[lang="ar"] .h5p-dragquestion .h5p-question-minus-one {
+  right: auto;
+  left: -0.15em;
+}

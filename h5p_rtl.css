@@ -32,7 +32,7 @@ html[lang="ar"] .h5p-advanced-text li {
 }
 
 html[lang="ar"] .h5p-advanced-text li > p {
-  display: inline; /* make <p> act like inline */
+  display: inline; 
 }
 
 html[lang="ar"]  .ck.ck-editor__editable_inline[dir=ltr] {
